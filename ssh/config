@@ -6,6 +6,6 @@ Host *
     ControlPersist yes
     ControlPath ~/.ssh/socks/%h-%p-%r
     # passphrase/password（交互式输入口令）的提示
-	BatchMode no 
+    BatchMode no 
     # 自动把计算机的密匙加入$HOME/.ssh/known_hosts文件
-	StrictHostKeyChecking no
+    StrictHostKeyChecking no
