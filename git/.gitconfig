@@ -1,0 +1,51 @@
+[user]
+    email = lilingxing20@163.com
+    name = lixingxing
+[push]
+#matching 提交的是名字一样的分支，只有服务器存在名字一样的，都提交
+#simple 是提交当前分支
+    defalut = simple
+    default = simple
+[color]
+    ui = true
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow 
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore_global
+	quotepath = false
+    autocrlf = input
+[alias]
+    br = branch
+    co = checkout
+    df = diff
+    last = cat-file commit HEAD
+    log-ns = log --name-status
+    log-ol = log --oneline
+    log-olg = log --oneline --graph
+    log-s = log --stat
+    rl = reflog
+    stat = status
+    st = status
+    rs = restore --staged 
+    rsh = reset --soft HEAD^
+    cmm = commit -m
+    cma = commit --amend
+    pr = pull --rebase
+    commit-utc='!TZ=Etc/UTC git commit'
+    reset-cmt='reset --soft HEAD^'
